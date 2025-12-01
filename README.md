@@ -170,15 +170,6 @@ I'd love to connect with fellow developers, problem-solvers, and Advent of Code 
 
 Feel free to reach out if you want to discuss solutions, collaborate on projects, or just chat about coding!
 
----
-
-## 📚 Resources
-
-- 🎄 [Official Advent of Code Website](https://adventofcode.com/)
-- 📖 [Advent of Code 2025](https://adventofcode.com/2025)
-- 🐍 [Python Documentation](https://docs.python.org/3/)
-- 💡 [Real Python - Advent of Code Guide](https://realpython.com/python-advent-of-code/)
-- 🎓 [r/adventofcode Subreddit](https://www.reddit.com/r/adventofcode/)
 
 ---
 
