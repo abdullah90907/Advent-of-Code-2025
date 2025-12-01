@@ -11,7 +11,7 @@
 
 **My second annual participation in the Advent of Code challenge!** 🚀
 
-[🌐 Portfolio](YOUR_PORTFOLIO_LINK) • [💼 LinkedIn](YOUR_LINKEDIN_LINK) • [📧 Contact](mailto:YOUR_EMAIL)
+[🌐 Portfolio](https://abdullah-siddique-dev.netlify.app/) • [💼 LinkedIn](https://www.linkedin.com/in/mr-abdullah-siddique/)
 
 </div>
 
@@ -164,9 +164,8 @@ Advent of Code 2025/
 
 I'd love to connect with fellow developers, problem-solvers, and Advent of Code enthusiasts!
 
-- 🌐 **Portfolio**: [YOUR_PORTFOLIO_LINK](YOUR_PORTFOLIO_LINK)
-- 💼 **LinkedIn**: [YOUR_LINKEDIN_LINK](YOUR_LINKEDIN_LINK)
-- 📧 **Email**: [YOUR_EMAIL](mailto:YOUR_EMAIL)
+- 🌐 **Portfolio**: [abdullah-siddique-dev.netlify.app](https://abdullah-siddique-dev.netlify.app/)
+- 💼 **LinkedIn**: [mr-abdullah-siddique](https://www.linkedin.com/in/mr-abdullah-siddique/)
 - 🐙 **GitHub**: [@abdullah90907](https://github.com/abdullah90907)
 
 Feel free to reach out if you want to discuss solutions, collaborate on projects, or just chat about coding!
