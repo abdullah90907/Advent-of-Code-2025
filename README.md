@@ -138,19 +138,21 @@ Advent of Code 2025/
 | Day | Part 1 | Part 2 | Notes |
 |-----|:------:|:------:|-------|
 | 1   | ⭐     | ⭐     | Circular position tracking |
-| 2   | 🔒     | 🔒     | Coming soon... |
-| 3   | 🔒     | 🔒     | Coming soon... |
-| 4   | 🔒     | 🔒     | Coming soon... |
-| 5   | 🔒     | 🔒     | Coming soon... |
-| 6   | 🔒     | 🔒     | Coming soon... |
-| 7   | 🔒     | 🔒     | Coming soon... |
-| 8   | 🔒     | 🔒     | Coming soon... |
+| 2   | ⭐     | ⭐     | Completed |
+| 3   | ⭐     | ⭐     | Completed |
+| 4   | ⭐     | ⭐     | Completed |
+| 5   | ⭐     | ⭐     | Completed |
+| 6   | ⭐     | ⭐     | Completed |
+| 7   | ⭐     | ⭐     | Completed |
+| 8   | ⭐     | ⭐     | Completed |
 | 9   | 🔒     | 🔒     | Coming soon... |
 | 10  | 🔒     | 🔒     | Coming soon... |
 | 11  | 🔒     | 🔒     | Coming soon... |
 | 12  | 🔒     | 🔒     | Coming soon... |
 
 **Legend**: ⭐ Completed | 🔒 Locked | 🔄 In Progress
+
+**Total Stars Earned**: 16 ⭐
 
 ---
 
