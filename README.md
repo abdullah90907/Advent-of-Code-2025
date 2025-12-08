@@ -137,14 +137,14 @@ Advent of Code 2025/
 
 | Day | Part 1 | Part 2 | Notes |
 |-----|:------:|:------:|-------|
-| 1   | ⭐     | ⭐     | Circular position tracking |
-| 2   | ⭐     | ⭐     | Completed |
-| 3   | ⭐     | ⭐     | Completed |
-| 4   | ⭐     | ⭐     | Completed |
-| 5   | ⭐     | ⭐     | Completed |
-| 6   | ⭐     | ⭐     | Completed |
-| 7   | ⭐     | ⭐     | Completed |
-| 8   | ⭐     | ⭐     | Completed |
+| 1   | ⭐     | ⭐     | Circular position tracking with modulo arithmetic |
+| 2   | ⭐     | ⭐     | Invalid ID detection - repeating digit sequences |
+| 3   | ⭐     | ⭐     | Maximum joltage calculation from digit pairs |
+| 4   | ⭐     | ⭐     | Grid neighbor counting - accessible paper rolls |
+| 5   | ⭐     | ⭐     | Range validation - fresh ingredient IDs |
+| 6   | ⭐     | ⭐     | Vertical column parsing with operators |
+| 7   | ⭐     | ⭐     | Beam splitting simulation through grid |
+| 8   | ⭐     | ⭐     | 3D graph connectivity - Union-Find MST |
 | 9   | 🔒     | 🔒     | Coming soon... |
 | 10  | 🔒     | 🔒     | Coming soon... |
 | 11  | 🔒     | 🔒     | Coming soon... |
