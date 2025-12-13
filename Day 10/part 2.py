@@ -4,14 +4,11 @@ from pulp import *
 
 def parse_line(line):
     """Parse machine line to extract buttons and target joltage levels."""
-    # Extract target joltage requirements {x,y,z,...}
     target_match = re.search(r'\{([\d,]+)\}', line)
     if not target_match:
         return None
     
     targets = list(map(int, target_match.group(1).split(',')))
-    
-    # Extract button wirings (a,b,c)
     button_matches = re.findall(r'\(([\d,]*)\)', line)
     buttons = []
     for btn_str in button_matches:
@@ -24,34 +21,26 @@ def parse_line(line):
 
 def min_presses(buttons, targets):
     """Find minimum button presses using integer linear programming."""
-    n = len(targets)  # number of counters
-    m = len(buttons)  # number of buttons
+    n = len(targets)
+    m = len(buttons)  
     
     if m == 0:
         return 0 if all(t == 0 for t in targets) else -1
-    
-    # Create the optimization problem
+
     prob = LpProblem("MinButtonPresses", LpMinimize)
-    
-    # Decision variables: number of times each button is pressed
     button_presses = [LpVariable(f"button_{i}", lowBound=0, cat='Integer') for i in range(m)]
     
-    # Objective: minimize total button presses
     prob += lpSum(button_presses)
     
-    # Constraints: each counter must reach its target value
     for counter_idx in range(n):
-        # Sum of all button effects on this counter must equal target
         counter_sum = lpSum([button_presses[btn_idx] 
                             for btn_idx in range(m) 
                             if counter_idx in buttons[btn_idx]])
         prob += counter_sum == targets[counter_idx], f"counter_{counter_idx}"
     
-    # Solve
     prob.solve(PULP_CBC_CMD(msg=0))
     
-    # Check if solution was found
-    if prob.status == 1:  # Optimal solution found
+    if prob.status == 1:
         total = sum(int(button_presses[i].varValue) for i in range(m))
         return total
     else:

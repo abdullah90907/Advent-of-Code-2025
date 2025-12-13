@@ -1,11 +1,8 @@
 import os
 import sys
-
-# Increase recursion depth just in case the path is very long
 sys.setrecursionlimit(5000)
 
 def solve_puzzle():
-    # Construct path to input.txt
     script_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_dir, 'input.txt')
     
@@ -18,7 +15,6 @@ def solve_puzzle():
                 if not line:
                     continue
                 
-                # Parse format "node: dest1 dest2 ..."
                 if ':' in line:
                     source, dests_str = line.split(':')
                     source = source.strip()
@@ -33,8 +29,6 @@ def solve_puzzle():
         return
 
     print(f"Graph built with {len(graph)} nodes.")
-    
-    # Helper to count paths between any two specific nodes
     def count_paths(start_node, end_node):
         memo = {}
 
@@ -43,7 +37,6 @@ def solve_puzzle():
                 return 1
             if node in memo:
                 return memo[node]
-            # If dead end and not target
             if node not in graph:
                 return 0
             
@@ -55,16 +48,7 @@ def solve_puzzle():
             return total
 
         return _dfs(start_node)
-
-    # Part 2: Find paths from 'svr' to 'out' that visit BOTH 'dac' and 'fft'.
-    # Since data cannot flow backwards (DAG), the visits must happen in a sequence.
-    # Case A: svr -> ... -> dac -> ... -> fft -> ... -> out
-    # Case B: svr -> ... -> fft -> ... -> dac -> ... -> out
-    
-    # We verify if nodes exist in the graph (or at least as destinations)
-    # Note: 'out' usually isn't a source key, but that's handled by base case.
     required_nodes = ['svr', 'dac', 'fft', 'out']
-    # We won't strictly enforce they exist in `graph` keys because 'out' usually doesn't.
     
     print("Calculating paths for sequence: svr -> dac -> fft -> out")
     paths_svr_dac = count_paths('svr', 'dac')
@@ -77,9 +61,6 @@ def solve_puzzle():
     paths_fft_dac = count_paths('fft', 'dac')
     paths_dac_out = count_paths('dac', 'out')
     total_case_b = paths_svr_fft * paths_fft_dac * paths_dac_out
-    
-    # Since it's a Directed Acyclic Graph, typically only one direction between 
-    # dac and fft is possible, but we sum both just in case (one will likely be 0).
     total_valid_paths = total_case_a + total_case_b
     
     print(f"\nPath Counts:")

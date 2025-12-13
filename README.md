@@ -145,14 +145,23 @@ Advent of Code 2025/
 | 6   | ⭐     | ⭐     | Vertical column parsing with operators |
 | 7   | ⭐     | ⭐     | Beam splitting simulation through grid |
 | 8   | ⭐     | ⭐     | 3D graph connectivity - Union-Find MST |
-| 9   | 🔒     | 🔒     | Coming soon... |
-| 10  | 🔒     | 🔒     | Coming soon... |
-| 11  | 🔒     | 🔒     | Coming soon... |
-| 12  | 🔒     | 🔒     | Coming soon... |
+| 9   | ⭐     | ⭐     | 2D coordinate analysis - rectangle formation |
+| 10  | ⭐     | ⭐     | Integer Linear Programming - ILP optimization with PuLP |
+| 11  | ⭐     | ⭐     | Graph traversal with memoization - recursive DFS |
+| 12  | ⭐     | ⭐     | Shape matching and grid placement - backtracking |
 
 **Legend**: ⭐ Completed | 🔒 Locked | 🔄 In Progress
 
-**Total Stars Earned**: 16 ⭐
+**Total Stars Earned**: 24 ⭐
+
+---
+
+## 🏆 Special Highlights
+
+**Most Challenging**: Day 10 - Factory Machines 🏭
+- Part 1: Solved systems of linear equations over GF(2) (binary field)
+- Part 2: Integer Linear Programming using PuLP library with CBC optimization
+- This puzzle showcased the power of choosing the right algorithm and mathematical approach
 
 ---
 
